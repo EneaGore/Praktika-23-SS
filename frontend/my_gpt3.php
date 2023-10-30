@@ -98,8 +98,7 @@ to {width: 100%}
 <div align = "center">
 
 <div align = "center">
-<h2 align ="center" style ="color:white"> <?php echo file_get_contents("../../../my_pass.txt")?> </h2>
-<h1 align ="center" style="color:white" > COMING SOON </h1> 
+<h1 align ="center" style="color:white" > Your virtual bartender </h1> 
 <div class ="typewriter"> 
 <h2 align = "center" style ="color:white" >Share something with your GPT-3 Bartender and get a Recommendation</h2>
 </div> 
