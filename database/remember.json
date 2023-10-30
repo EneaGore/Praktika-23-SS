@@ -1,0 +1,21 @@
+{
+    "headers": {
+        "Content-Type": "application\/x-www-form-urlencoded",
+        "Content-Length": "0",
+        "Cpee-Attr-Theme": "preset",
+        "Cpee-Attr-Modeltype": "CPEE",
+        "Cpee-Attr-Info": "My cockTail",
+        "Cpee-Attr-Uuid": "8695eaa5-1c6e-419b-88c7-3bbeba9b59c1",
+        "Cpee-Activity": "a2",
+        "Cpee-Callback-Id": "bdc9b55725885ae90617750ffb17db72",
+        "Cpee-Callback": "https:\/\/cpee.org\/flow\/engine\/502\/callbacks\/bdc9b55725885ae90617750ffb17db72\/",
+        "Cpee-Instance-Uuid": "8695eaa5-1c6e-419b-88c7-3bbeba9b59c1",
+        "Cpee-Instance-Url": "https:\/\/cpee.org\/flow\/engine\/502\/",
+        "Cpee-Instance": "502",
+        "Cpee-Base": "https:\/\/cpee.org\/flow\/engine\/",
+        "User-Agent": "Typhoeus - https:\/\/github.com\/typhoeus\/typhoeus",
+        "Accept": "*\/*",
+        "Host": "lehre.bpm.in.tum.de"
+    },
+    "content": []
+}
