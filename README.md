@@ -4,7 +4,7 @@
 
 ## 
 
-The thing is available at:  [lehre server](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/wait.php)
+The application is hosted on the [lehre server](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea) and UI for ordering is available here:  [lehre server](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/wait.php)
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
