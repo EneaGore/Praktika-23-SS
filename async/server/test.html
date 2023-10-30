@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<body> 
+
+
+<button onclick="sendit()"> SEND </button> 
+<button onclick="del()"> DELETE </button> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+<script>
+base_url = 'https://lehre.bpm.in.tum.de/~ge72git/async/server/';
+
+function del(){
+const my_url = base_url + "delete_queue.php"; 
+	$.post(my_url , function(response) { console.log(response) });
+
+};
+// XXX  this ONE addds
+function sendit() {
+
+	const my_url =  'https://lehre.bpm.in.tum.de/~ge72git/async/server/order_queue.php';
+/*
+	$.ajax ({
+		contentType: "application/json",
+data: JSON.stringify({"id" : "hey", "order":"world"}),
+	   type : 'POST',
+     
+	   success : function (result) {
+        console.log (result); // Here, you need to use response by PHP file.
+     },
+     error : function () {
+        console.log ('error');
+     }
+
+   });
+}
+*/
+
+	$.post(my_url,data = {id: "hello" ,order: "world"} ,function(response) {
+console.log(response)
+});
+}
+
+// $.post('https://lehre.bpm.in.tum.de/~ge72git/async/server/order_queue.php');
+</script>
+</body>
+</html>
+

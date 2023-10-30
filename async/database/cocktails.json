@@ -1,0 +1,27 @@
+
+{
+
+"instructions": ["stir", "shake", "mix"],
+
+
+"cocktails" : ["gin_tonic","tequila_sunrise", "white_russian", "old_fashioned", "mojito", "cuba_libre","caipirinha", "flying_hirsch", "long_island", "bloody_mary"],
+
+
+"garnishes": ["tabasco", "lemon", "ice", "grenadine","curacao", "simple_syrup", "mint","salt",  "sugar","heavy_cream","bitters"],
+"mixers": ["cola","tonic","sprudel","redbull","orange_juice", "cocunt_milk", "tomato_juice"],
+"alcs"  : ["gin", "vodka", "tequila", "whiskey","jager_meister","kahlua", "white_rum", "dark_rum","triple_sec", "aperol"],
+
+"recipes" : {
+"gin_tonic" : ["gin", "tonic", "lemon","ice"],
+"cuba_libre" : ["dark_rum", "cola", "lemon", "ice"],
+"caipirinha" : ["white_rum", "lemon","ice", "sugar" ],
+"old_fashioned" : ["whiskey","bitters", "sugar" ],
+"mojito": ["white_rum","mint", "ice", "sugar", "sprudel"],
+"tequila_sunrise": ["tequila", "orange_juice", "ice", "grenadine"],
+"flying_hirsch" : ["redbull", "jager_meister" ,"ice"],
+"white_russian" : ["vodka", "kahlua", "heavy_cream"],
+"long_island" :["vodka","gin","tequila","triple_sec", "cola", "lemon", "ice"],
+"bloody_mary" :["vodka","tomato_juice", "lemon","salt","tabasco"]
+}
+
+}
