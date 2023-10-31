@@ -11,7 +11,7 @@ The process engine instance 22817 is over njah (https://cpee.org/flow/index.html
 
 ![BASEUI ](Images/baseUI.PNG)
 ![queue_UI ](Images/queue_UI.PNG)
-![bartender ](Images/bartender_gpt.PNG)
+![bartender ](Images/bartened_gpt.PNG)
 
 ![fmc ](Images/fmc_architecture_diagram.PNG)
 ![CPEE ](Images/cpeeinstance.PNG)
