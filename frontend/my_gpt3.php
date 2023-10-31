@@ -127,22 +127,6 @@ var mixers  = ["cola","tonic","sprudel","redbull","orange_juice","sprite", "cocu
 var alcs  = ["gin", "vodka", "tequila", "whiskey","jagermeister","kahlua", "white_rum", "dark_rum","triple sec", "aperol"];
 var parsed_order = "";
 let ingred = alcs.concat(garnish).concat(mixers) 
-    
-function test_gpt(){
-var OPENAI_API_KEY = "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";
-var sUrl = "https://api.openai.com/v1/completions";
-    var sModel = selModel.value;// "text-davinci-003";
-    if (sModel.indexOf("gpt-3.5-turbo") != -1) {
-        //https://openai.com/research/gpt-4
-        sUrl = "https://api.openai.com/v1/chat/completions";
-    }
-
-    var oHttp = new XMLHttpRequest();
-    oHttp.open("POST", sUrl);
-    oHttp.setRequestHeader("Accept", "application/json");
-    oHttp.setRequestHeader("Content-Type", "application/json");
-    oHttp.setRequestHeader("Authorization", "Bearer " + OPENAI_API_KEY)
-}
 
 function show(){
 	create_rep(my_input,my_response);
