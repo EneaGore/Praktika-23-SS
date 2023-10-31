@@ -4,45 +4,37 @@
 
 ## 
 
-The application is hosted on the [lehre server](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea) and UI for ordering is available here:  [lehre server](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/wait.php)
+### The application is hosted on the [ge72git lehre server](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea) and UI for ordering is available here:  [BASE UI](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/wait.php)
 
-The process engine instance 22817 is over njah (https://cpee.org/flow/index.html?monitor=https://cpee.org/flow/engine/22817/)
+### The process engine instance (22817) is available on this [cpee instance](https://cpee.org/flow/index.html?monitor=https://cpee.org/flow/engine/22817/)
 
+## Archtiecture
+![fmc ](Images/fmc_architecture_diagram.PNG)
 
+## PROCESS Engine
+![CPEE ](Images/cpeeinstance.PNG)
+
+## Database and Server
+
+The Sqlite Database has 1 table of name "orders" with following Columns:
+- id STRING (chosen by user)
+- uniqid STRING (generated on server)
+- order STRING
+- status STRING
+  
+The server files:
+
+- order_queue.php (Adds a cocktail to the queue with status in_queue and a generated uniqid, the request comes from the base User interface)
+- retrieve.php (Queries the database for a cocktail with status in_queue, return "None" if there isnt any)
+- delete_queue.php (Delete a record from the database based on given uniqiq)
+- update_status.php (Updates the status of a record in the database base on the status and uniqid passed in the Request body)
+- event.php (Creates a stream of all records in the database, these are continously read from the preping user interface so the page is updated without refreshing)
+
+## USER INTERFACE
 ![BASEUI ](Images/baseUI.PNG)
 ![queue_UI ](Images/queue_UI.PNG)
 ![bartender ](Images/bartened_gpt.PNG)
 
-![fmc ](Images/fmc_architecture_diagram.PNG)
-![CPEE ](Images/cpeeinstance.PNG)
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/mctester1/prak_23_enea.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/mctester1/prak_23_enea/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
 ## Test and Deploy
 
@@ -55,10 +47,6 @@ Use the built-in continuous integration in GitLab.
 - [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
 ***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
 ## Suggestions for a good README
 
