@@ -32,14 +32,14 @@ The server files:
 ***
 ## USER INTERFACE
 ### [BASE UI](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/wait.php)
-
+The Base UI allows you to customize any combination of drinks. To assist in the process you can choose to pick a random cocktail, order by voice assist(only cocktail names) or use the gpt3 bartender to recommend. After the order has been placed the user is takign to the Preperation UI.
 ![BASEUI ](Images/baseUI.PNG)
 ***
-### [Queue UI](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/preping.php) 
-
+### [Preperation UI](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/preping.php) 
+Based on the status properties that is retrieved from the SSE's the orders are sorted on the UI. Market in red are the orders made from the id the same as the user.
 ![queue_UI ](Images/queue_UI.PNG)
 ***
 ### [GPT UI](https://lehre.bpm.in.tum.de/~ge72git/prak_23_enea/frontend/my_gpt3.php)
-
+Here you can share some preference and get a response from gpt3.5 Turbo engine. There is a pre prompt to make gpt3 aware of the context. The result is than parsed and any available ingredients are transfered to the BASE UI. Please note that the OPEN_API_KEY provided in this repository has been disabled but it is still functional on the lehre server.
 ![bartender ](Images/bartened_gpt.PNG)
 ***
