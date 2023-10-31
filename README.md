@@ -1,4 +1,4 @@
-# Praktika 23SS Worker Assistance Summer User Interfac 
+# Praktika 23SS User Interface Enea Gore
 
 
 
