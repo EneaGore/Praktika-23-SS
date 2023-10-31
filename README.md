@@ -9,7 +9,12 @@ The application is hosted on the [lehre server](https://lehre.bpm.in.tum.de/~ge7
 The process engine instance 22817 is over njah (https://cpee.org/flow/index.html?monitor=https://cpee.org/flow/engine/22817/)
 
 
-![CPEE THING ](Images/cpeeinstance.PNG)
+![BASEUI ](Images/baseUI.PNG)
+![queue_UI ](Images/queue_UI.PNG)
+![bartender ](Images/bartender_gpt.PNG)
+
+![fmc ](Images/fmc_architecture_diagram.PNG)
+![CPEE ](Images/cpeeinstance.PNG)
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
