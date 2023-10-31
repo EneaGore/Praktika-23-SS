@@ -16,7 +16,6 @@ $res['id'] = "None";
 $res['order'] =  "None";
 $res['uniq'] = "None";
 print json_encode($res);
-	//print json_encode('{"id":"None","status":"None","uniqid":"None"}');
 	exit;	
 }else{
         $empty_queue = false;		
