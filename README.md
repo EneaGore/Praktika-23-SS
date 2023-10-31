@@ -14,6 +14,8 @@
 ## PROCESS Engine
 ![CPEE ](Images/cpeeinstance.PNG)
 ***
+## Initial BPMN
+![BPMN](Images/initialbpmn.PNG)
 ## Database and Server
 
 The Sqlite Database has 1 table of name "orders" with following Columns:
